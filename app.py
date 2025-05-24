@@ -125,3 +125,8 @@ Mensagem recebida: {message}
 
 if __name__ == '__main__':
     app.run(port=5000)
+    
+    @app.route("/")
+def home():
+    return "API rodando com sucesso!"
+
